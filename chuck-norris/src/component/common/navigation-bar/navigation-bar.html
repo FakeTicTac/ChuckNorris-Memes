@@ -1,0 +1,14 @@
+
+
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar navigationBarChuck">
+    <div class="container-fluid">
+        <ul class="navbar-nav m-auto">
+            <li class="nav-item active"><a href="" class="nav-link">Home</a></li>
+            <li repeat.for="item of SelectedChuckJokeCategories" class="nav-item">
+                <a href="/category${SelectedChuckJokeCategories.indexOf(item) + 1}" class="nav-link">${item.Title} Fun</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+

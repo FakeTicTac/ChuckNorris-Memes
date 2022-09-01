@@ -1,0 +1,23 @@
+
+
+<!-- Category Naming For Better UI Understanding. -->
+<div class="delimiter"></div>
+<div style="background-color: black; color: white; text-align: center;">
+    <h1 style="margin-top: 30px; margin-bottom: 30px;">🡻 ${Category.Title} Jokes! 🡻</h1>
+</div>
+
+<!-- Fun Gif. -->
+<div style="padding-top:54.600%;position:relative;"><iframe src="https://gifer.com/embed/jiK" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div>
+
+<div class="delimiter" style="height: 3px;"></div>
+<div class="transitionText" style="color: white; font-size: 30px; text-align: center; margin-top: 70px; margin-bottom: 20px; font-weight: bold;">Lets Have Some Fun Together!</div>
+<!-- Grid Of Loaded Jokes From API. -->
+<div class="grid-container">
+    <li repeat.for="ChuckJoke of ChuckJokes">
+        <div class="grid-item">${ChuckJoke.value}</div>
+    </li>
+</div>
+
+<div style="text-align: center;">
+    <img src="https://c.tenor.com/BupEc9JI6S0AAAAi/chuck-norris-minion.gif" alt="this slowpoke moves" style="width: 100px;" /> 
+</div>

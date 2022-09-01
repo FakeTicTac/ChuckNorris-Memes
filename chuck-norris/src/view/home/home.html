@@ -1,0 +1,63 @@
+
+
+<!-- Awesome Video Of Chuck Norris -->
+<div class="videoWrapper">
+  <div class="delimiter"></div>
+  <video autoplay muted loop class="videoInsert">
+    <source src="https://chucknorris.com/wp-content/themes/chuck-norris/videos/chucknorris.mp4" type="video/mp4">
+  </video>
+  <div class="delimiter"></div>
+</div>
+
+
+<!-- Chuck Norris Facts - Fun Stuff -->
+<div class="container factWrapper">
+  <h1 class="text-center transitionText" style="color: gray">Do You Know These Facts About Me?</h1>
+    <div class="row" style="margin-top: 100px; ">
+      <div class="col-md-6">
+        <img src="https://www.pngall.com/wp-content/uploads/12/Chuck-Norris-American-Martial-Artist-PNG-Cutout.png" class="w-100" />
+      </div>
+      <div class="col-md-6">
+        <div class="row align-items-center h-100">
+          <div class="col">
+            <h1 class="display-3" style="text-align: center; color: orange">Fact Number ${ChuckFact.PeriodNumber}</h1>
+            <p class="lead" style="color:white; font-size: 30px; text-align: center;">${ChuckFact.Value}</p>
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+  <div class="delimiter" style="height: 2px;"></div>
+
+
+  <!-- Chuck Loading Jokes -->
+  <div if.bind="isEmpty" class="seenJokes">
+    <h1 class="text-center transitionText" style="color: gray; margin-bottom: 30px;">You Have Seen No Jokes Yet!</h1>
+    <div class="d-flex justify-content-center text-light">
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Already Seen Jokes -->
+  <div class="seenJokes">
+    <div if.bind="!isEmpty" style="background-color: black;">
+      <div class="container containerSeenJokes">
+        
+        <h1 class="text-center transitionText" style="margin-bottom: 30px;">You Already Seen These Jokes!</h1>
+        <li repeat.for="ChuckJoke of ChuckJokes"> 
+          <div class="card" style="color: black; text-align: center;">
+            <div class="card-body">
+              <blockquote class="blockquote mb-0">
+                <p>${ChuckJoke.value}</p>
+                <footer style="margin-top: 20px;" class="blockquote-footer">© It's me, Chuck</footer>
+              </blockquote>
+            </div>
+          </div>
+        </li>
+
+      </div>
+    </div>
+  </div>
+  

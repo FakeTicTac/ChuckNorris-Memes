@@ -1,0 +1,22 @@
+
+<!-- Just Reminder Of The Category For User UI. -->
+<div class="delimiter"></div>
+<div style="background-color: black; color: white; text-align: center; margin-bottom: 30px;">
+    <h1 style="margin-top: 30px; margin-bottom: 30px;">🡻 My Best ${Category.Title} Jokes! 🡻</h1>
+</div>
+
+<div class="container" style="margin-bottom: 100px;">
+    <li repeat.for="ChuckJoke of ChuckJokes">
+    <div class="row">
+        <div class="col-md-12" style="display: flex; align-items: center;">
+            <img style='float:left; width: 20%; margin-right:10px; color: white;' src="${getRandomPhoto()}" />
+            <p style="color: white; font-size: 20px;">${ChuckJoke.value}</p>
+        </div>
+        <hr style="color: white;">
+    </li>
+</div>
+
+<!-- Funny Gif -->
+<div class="delimiterCategoryThree"></div>
+<div style="padding-top:64.858%;position:relative;"><iframe src="https://gifer.com/embed/4mZ" width="100%" height="100%" style='position:absolute;top:0;left:0;' frameBorder="0" allowFullScreen></iframe></div>
+<div class="delimiterCategoryThree" style="margin-bottom: 30px; margin-top: 0px;"></div>

@@ -1,0 +1,125 @@
+
+/* Navigation Bar. */
+.navigationBarChuck {
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    background-color: black; 
+    font-size: 25px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-weight: bolder;
+}
+
+/* Main Body Element. */
+body {
+    background-color: black;
+}
+
+/* Fancy Delimeters For Navigation Bar. */
+@media only screen and (min-width: 992px) {
+    .navbar .navbar-nav .nav-item .nav-link {
+      padding: 0 0.5em;
+    }
+    .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+      border-right: 2px solid grey;
+    }
+}
+
+/* Changing Color Text. */
+.transitionText {
+    color: gray;
+    transition: color 2s;
+}
+
+/* Video on Home Page. */
+.videoInsert {
+    width: 100%; 
+    display: block; 
+    margin: 0 auto;
+}
+
+/* Chuck Fact Div. */
+.factWrapper {
+    margin-top: 50px; 
+    width: 100%; 
+    width: 100vw;
+    height: 800px; 
+    color: gray; 
+    overflow:hidden
+}
+  
+/* Container With Video. */
+.videoWrapper {
+    width: 100%; 
+    background-color: black;
+}
+
+/* Storing Already Seen Jokes. */
+.seenJokes {
+    margin-top: 90px;
+    margin-bottom: 60px;
+}
+
+/* Storing Already Seen Jokes. */
+.containerSeenJokes {
+    margin-top: 50px; 
+    width: 100%; 
+    width: 100vw; 
+    color: gray;
+}
+
+/* Jokes In Grid. */
+.grid-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: black;
+    padding: 10px;
+    column-gap: 50px;
+    row-gap: 50px;
+  }
+
+  /* Jokes In Grid. */
+.grid-item {
+    vertical-align: middle;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    height: 100%;
+    padding: 70px 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    text-align: center;
+
+}
+ 
+/* Colums Custom. */
+.columnasd {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+/* Rows Custom. */
+.rowasd::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Just Delimiter For Items. */
+.delimiter {
+    background-color: orange; 
+    height: 10px;
+}
+
+/* Just Delimiter For Items. */
+.delimiterCategoryThree {
+    background-color: orange; 
+    height: 3px; 
+    margin-top: 30px;
+
+}
